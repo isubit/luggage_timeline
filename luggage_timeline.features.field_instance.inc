@@ -280,7 +280,7 @@ Baseball, bat, glove, ...',
       'active' => 1,
       'module' => 'image',
       'settings' => array(
-        'insert' => 0,
+        'insert' => 1,
         'insert_absolute' => 0,
         'insert_class' => 'insert-default-image-styling',
         'insert_default' => 'auto',

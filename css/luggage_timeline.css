@@ -19,7 +19,7 @@
 
 /* .timeline-title class is added by the Feature in Display Suite */
 
-.view-timeline.view-display-id-page .timeline-title {
+.view-timeline .timeline-title {
   padding-top: 0;
   margin-bottom: 0.5rem;
   font-size: 1.5rem;
@@ -27,32 +27,36 @@
 
 /* --- Styled Timeline View --- */
 
+.view-timeline .item-list .views-row {
+  padding: 1rem;
+  border: 1px solid #dddddd;
+}
+
 @media (min-width: 900px) {
 
-  .view-timeline.view-display-id-page .item-list > ul {
+  .view-timeline .item-list > ul {
     display: flex;
     flex-direction: column;
   }
 
-  .view-timeline.view-display-id-page .item-list .node-timeline-event {
+  .view-timeline .item-list .node-timeline-event {
     border: 1px solid #ddd;
     border-radius: 3px;
     padding: 1rem;
     background: #fff;
   }
 
-  .view-timeline.view-display-id-page .item-list .views-row {
-    border: 1px solid dodgerblue;
-    border: 0 ;
+  .view-timeline .item-list .views-row {
     display: flex;
     position: relative;
     width: calc(50% + 2px);
     margin: 0;
+    border: 0;
   }
 
   /* Push up each item for a bit of overlap to save vertical space. */
 
-  .view-timeline.view-display-id-page .item-list .views-row:not(:first-of-type) {
+  .view-timeline .item-list .views-row:not(:first-of-type) {
     margin-top: -5rem;
   }
 
@@ -60,14 +64,14 @@
    * is created with a red border.
    */
 
-  .view-timeline.view-display-id-page .item-list .views-row-odd {
+  .view-timeline .item-list .views-row-odd {
     align-self: flex-start;
     padding-right: 3rem;
     padding-left: 0;
     border-right: 4px solid #cc0000;
   }
 
-  .view-timeline.view-display-id-page .item-list .views-row-even {
+  .view-timeline .item-list .views-row-even {
     align-self: flex-end;
     padding-left: 3rem;
     padding-right: 0;
@@ -75,7 +79,7 @@
   }
 
   /* The white arrows */
-  .view-timeline.view-display-id-page .views-row:before {
+  .view-timeline .views-row:before {
     content: '';
     position: absolute;
     z-index: 1;
@@ -87,18 +91,18 @@
     background-color: #fff;
   } 
 
-  .view-timeline.view-display-id-page .views-row-odd:before {
+  .view-timeline .views-row-odd:before {
     right: 2rem;
     border-width: 0 1px 1px 0;
   }
 
-  .view-timeline.view-display-id-page .views-row-even:before {
+  .view-timeline .views-row-even:before {
     left: 2rem;
     border-width: 1px 0 0 1px;
   }
 
   /* The circles */
-  .view-timeline.view-display-id-page .views-row:after {
+  .view-timeline .views-row:after {
     content: '';
     position: absolute;
     top: 3rem;
@@ -109,11 +113,11 @@
     background-color: #ddd;
   } 
 
-  .view-timeline.view-display-id-page .views-row-odd:after {
+  .view-timeline .views-row-odd:after {
     right: calc(-1rem - 2px);
   }
 
-  .view-timeline.view-display-id-page .views-row-even:after {
+  .view-timeline .views-row-even:after {
     left: calc(-1rem - 2px);
   }
   
